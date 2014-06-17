@@ -14,4 +14,6 @@ ro.kernel.qemu=0
 ro.tvout.enable=false
 
 persist.sys.storage_preload=1
+ro.telephony.ril_class=SamsungBCMRIL
+
 
