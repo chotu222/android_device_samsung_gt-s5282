@@ -60,3 +60,11 @@ TARGET_BUILD_VARIANT := userdebug
 PRODUCT_AAPT_CONFIG := normal ldpi mdpi nodpi
 PRODUCT_AAPT_PREF_CONFIG := ldpi
 
+# These are the hardware-specific settings that are stored in system properties.
+# Note that the only such settings should be the ones that are too low-level to
+# be reachable from resources or other mechanisms.
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.interface=wlan0 \
+    mobiledata.interfaces=rmnet0 \
+    ro.telephony.ril_class=SamsungBCMRIL \
+

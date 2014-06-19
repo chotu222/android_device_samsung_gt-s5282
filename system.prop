@@ -15,5 +15,6 @@ ro.tvout.enable=false
 
 persist.sys.storage_preload=1
 ro.telephony.ril_class=SamsungBCMRIL
+persist.sys.dataprefer.simid=0
 
 
